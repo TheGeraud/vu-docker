@@ -4,16 +4,16 @@ Application Vue.js 3 containerisée avec Docker et déployée sur AWS EC2 via Am
 
 ## 📐 Architecture
 
-GitHub Push
-│
-▼
-GitHub Actions (CI/CD)
-│
-├─ Build image Docker (multi-stage)
-│
-├─ Push image → Amazon ECR
-│
-└─ Deploy → AWS EC2
+GitHub Push (main)
+    │
+    ▼
+GitHub Actions
+    │
+    ├─ Build image Docker (multi-stage)
+    │
+    └─ Push image → Amazon ECR
+    
+          (déploiement EC2 manuel)
 
 ## 🛠️ Stack technique
 
